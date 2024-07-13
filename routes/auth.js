@@ -48,7 +48,7 @@ router.get('/job_seekers', async (req, res) => {
   }
 });
 
-// Fetch all employers
+// Fetch all employers   (new feature added)
 router.get('/employers', async (req, res) => {
   try {
     const employers = await User.find({ role: 'employer' });
