@@ -122,7 +122,7 @@ router.post('/jobs/:id/apply', auth, async (req, res) => {    // job id
 
     job.applications.push(req.user._id);
     await job.save();
-    res.send(job);
+    res.send({message: 'Job Applied successfully', job});
   } catch (error) {
     console.error(error);
     res.status(500).send({ error: 'Internal Server Error' });
@@ -140,7 +140,7 @@ router.get('/jobs/:id/applications', auth, async (req, res) => {    // job id
     if (!job) {
       return res.status(404).send({ error: 'Job not found' });
     }
-
+console.log(job.applications);
     res.send(job.applications);
   } catch (error) {
     console.error(error);
