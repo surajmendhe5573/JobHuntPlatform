@@ -3,7 +3,7 @@
 
 This is the backend for a job portal application that allows users to register as either employers or job seekers, browse jobs, apply for jobs, post job listings, and manage job applications.
 
-The Job Application Platform is a comprehensive web application designed to streamline the process of job seeking and hiring. It caters to both job seekers and employers, offering a range of features to facilitate the job application process.
+The Job Application Platform is a comprehensive web application designed to streamlines the process of job seeking and hiring. It caters to both job seekers and employers, offering a range of features to facilitate the job application process.
 
 ## Features
 
